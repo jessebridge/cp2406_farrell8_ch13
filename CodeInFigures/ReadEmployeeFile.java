@@ -11,7 +11,7 @@ public class ReadEmployeeFile
          InputStream input = new BufferedInputStream(Files.newInputStream(file));
          BufferedReader reader = new BufferedReader(new InputStreamReader(input));
          
-         s = reader.readLine();
+         String s = reader.readLine();
          while(s != null)
          {
             System.out.println(s);
